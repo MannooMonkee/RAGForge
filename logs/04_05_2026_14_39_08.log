@@ -1,0 +1,16 @@
+HTTP Request: POST http://testserver/chat "HTTP/1.1 400 Bad Request"
+HTTP Request: POST http://testserver/chat "HTTP/1.1 400 Bad Request"
+HTTP Request: POST http://testserver/chat "HTTP/1.1 200 OK"
+HTTP Request: POST http://testserver/chat "HTTP/1.1 500 Internal Server Error"
+HTTP Request: POST http://testserver/upload "HTTP/1.1 200 OK"
+HTTP Request: POST http://testserver/upload "HTTP/1.1 422 Unprocessable Entity"
+HTTP Request: POST http://testserver/upload "HTTP/1.1 500 Internal Server Error"
+{"error": "unsupported operand type(s) for /: 'WindowsPath' and 'NoneType'", "timestamp": "2026-04-05T18:39:08.660629Z", "level": "error", "event": "Failed to initialize ChatIngestor"}
+{"error": "unsupported operand type(s) for /: 'WindowsPath' and 'NoneType'", "timestamp": "2026-04-05T18:39:08.990657Z", "level": "error", "event": "Failed to initialize ChatIngestor"}
+Loading faiss with AVX2 support.
+Successfully loaded faiss with AVX2 support.
+`embedding_function` is expected to be an Embeddings object, support for passing in a function will soon be removed.
+{"session_id": "s1", "timestamp": "2026-04-05T18:39:11.195618Z", "level": "info", "event": "LLM loaded successfully"}
+{"session_id": "s1", "timestamp": "2026-04-05T18:39:11.195812Z", "level": "info", "event": "ConversationalRAG initialized"}
+{"error": "Error in [<unknown>] at line [-1] | Message: RAG chain not initialized. Call load_retriever_from_faiss() before invoke().", "timestamp": "2026-04-05T18:39:11.195969Z", "level": "error", "event": "Failed to invoke ConversationalRAG"}
+{"error": "FAISS index directory not found: faiss_index/does_not_exist", "timestamp": "2026-04-05T18:39:11.196773Z", "level": "error", "event": "Failed to load retriever from FAISS"}
